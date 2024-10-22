@@ -2,5 +2,5 @@ services:
   - type: web
     name: Fitplanner
     env: ruby
-    buildCommand: "bundle install"
+    buildCommand: "bundle install && bundle exec rake assets:precompile"
     startCommand: "bin/rails server -b 0.0.0.0 -p $PORT"
