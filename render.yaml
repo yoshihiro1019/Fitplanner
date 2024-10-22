@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: Fitplanner
+    env: ruby
+    buildCommand: "bundle install"
+    startCommand: "bin/rails server -b 0.0.0.0 -p $PORT"
